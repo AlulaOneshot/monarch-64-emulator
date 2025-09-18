@@ -1,2 +1,2 @@
 # monarch-64-emulator
-A testing emulator for the monarch-64 CPU architecture.
+A Work in progress, all in one emulator for the monarch64 Computing Architecture
