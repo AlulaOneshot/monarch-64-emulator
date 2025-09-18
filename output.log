@@ -1,0 +1,75 @@
+[2025-09-17T20:21:41.949185000Z ERROR monarch_64_emulator::motherboards::monad] Monad Motherboard: No boot cartridge inserted. No data loaded.
+[2025-09-17T22:29:39.776575000Z ERROR monarch_64_emulator::motherboards::monad] Monad Motherboard: No boot cartridge inserted. No data loaded.
+[2025-09-17T23:02:18.556277000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:02:54.172122000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:03:03.294408000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:03:51.725039000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:04:36.523562000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:05:35.485487000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:05:38.970931000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:06:36.965815000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:08:23.761446000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:08:42.051574000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:11:12.086131000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:11:48.220402000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:15:25.914764000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:16:25.397045000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:16:49.447756000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:17:27.453957000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:17:53.102724000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:18:36.322016000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-17T23:21:25.507648000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0xC03
+[2025-09-17T23:22:03.071292000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
+[2025-09-17T23:23:13.804496000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
+[2025-09-17T23:23:18.662623000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
+[2025-09-18T11:24:07.448597000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x800
+[2025-09-18T11:26:14.798134000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x800
+[2025-09-18T11:27:09.776294000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x800
+[2025-09-18T11:27:25.564073000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x800
+[2025-09-18T11:28:35.976829000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-18T11:28:51.230974000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-18T11:29:02.567791000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x800
+[2025-09-18T11:30:54.989077000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x800
+[2025-09-18T11:31:05.475852000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x800
+[2025-09-18T11:31:42.495310000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x800
+[2025-09-18T11:34:14.375074000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x800
+[2025-09-18T11:36:11.134275000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x80
+[2025-09-18T11:36:21.238487000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-18T11:36:37.652170000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-18T11:40:28.393314000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0xC03
+[2025-09-18T11:40:47.221347000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-18T11:40:58.400451000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
+[2025-09-18T11:43:26.122120000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x30C
+[2025-09-18T11:43:30.631524000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0xE0C
+[2025-09-18T11:43:38.518024000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
+[2025-09-18T11:44:03.648550000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x8000
+[2025-09-18T11:44:10.815876000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x800
+[2025-09-18T11:44:22.030556000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-18T11:44:35.611319000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-18T11:44:40.600136000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-18T11:46:11.770367000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-18T11:46:39.377677000Z ERROR monarch_64_emulator::cpus::monad] Unknown opcode encountered: 0x0
+[2025-09-18T11:47:13.935092000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
+[2025-09-18T11:47:32.943899000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
+[2025-09-18T11:47:54.139754000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
+[2025-09-18T11:48:33.323808000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 8 at address 0
+[2025-09-18T11:48:33.323963000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 30e at address 8
+[2025-09-18T11:48:33.323984000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
+[2025-09-18T11:48:45.935083000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 8 at address 0
+[2025-09-18T11:48:45.935195000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 30E at address 8
+[2025-09-18T11:48:45.935210000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
+[2025-09-18T11:49:02.491856000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 0x8 at address 0x0
+[2025-09-18T11:49:02.491907000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 0x30E at address 0x8
+[2025-09-18T11:49:02.491916000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
+[2025-09-18T11:59:10.280884000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 0xF00000000F00009 at address 0x0
+[2025-09-18T11:59:10.281207000Z ERROR monarch_64_emulator::cpus::monad] Tried to load immediate into a non imm register.
+[2025-09-18T12:00:00.704547000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 0xF00000000000009 at address 0x0
+[2025-09-18T12:00:00.705135000Z ERROR monarch_64_emulator::cpus::monad] Tried to load immediate into a non imm register.
+[2025-09-18T12:00:37.155256000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 0xF00000000F00009 at address 0x0
+[2025-09-18T12:00:37.155516000Z ERROR monarch_64_emulator::cpus::monad] Tried to load immediate into a non imm register.
+[2025-09-18T12:01:00.180641000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 0xF000000F0000009 at address 0x0
+[2025-09-18T12:01:00.180730000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 0x30E at address 0x8
+[2025-09-18T12:01:00.180744000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
+[2025-09-18T12:46:33.817091000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 0xF000000F0000009 at address 0x0
+[2025-09-18T12:46:33.818393000Z INFO monarch_64_emulator::cpus::monad] Executing Operation 0x30E at address 0x8
+[2025-09-18T12:46:33.818421000Z INFO monarch_64_emulator::cpus::monad] HALT encountered. Stopping execution.
