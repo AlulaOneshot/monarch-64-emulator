@@ -7,6 +7,7 @@ use crate::{
 
 pub struct MonadMotherboard {
     pub cpu: Box<dyn crate::cpus::Monarch64CPU>,
+    pub io_bus: Mutex<crate::misc::io_bus::IoBus>,
     pub boot_cartridge: Option<MonadBootCartridge>,
 }
 
@@ -24,7 +25,7 @@ impl Monarch64Motherboard for MonadMotherboard {
     }
 
     fn run_cpu(&mut self, memory_bus: &Mutex<MemoryBus48>) {
-        self.cpu.run_cpu(memory_bus);
+        self.cpu.run_cpu(memory_bus, &self.io_bus);
     }
 
     fn init(&mut self, memory_bus: &Mutex<MemoryBus48>) {
@@ -56,6 +57,7 @@ impl MonadMotherboard {
         Self {
             cpu,
             boot_cartridge: None,
+            io_bus: Mutex::new(crate::misc::io_bus::IoBus::new()),
         }
     }
 
