@@ -7,3 +7,10 @@ edition = "2024"
 fern = "0.7.1"
 log = "0.4.28"
 humantime = "2.3.0"
+
+# BEFORE YOU PUBLISH
+# Remove this
+# Convert to lib
+# Document your code
+# Add tests
+# Finish the assembler
