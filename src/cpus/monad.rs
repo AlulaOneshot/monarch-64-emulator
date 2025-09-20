@@ -3908,35 +3908,83 @@ impl MonadCPU {
     }
 
     fn inb(&mut self, operation: u64, io_bus: &Mutex<IoBus>) {
-        todo!("INB instruction is not implemented yet");
+        let port_index_reg = ((operation & 0xFFFF0000) >> 16) as u16;
+        let dest_reg = ((operation & 0xFFFF00000000) >> 32) as u16;
+        
+        let port_index = (self.get_register_value_from_code(port_index_reg) & 0xFFFF) as u16;
+        let port_value = io_bus.lock().unwrap().read_u8(port_index);
+        let dest_value = self.get_register_value_from_code(dest_reg);
+        self.set_register_value_from_code(dest_reg, dest_value & 0xFFFFFFFFFFFFFF00 | port_value as u64);
     }
 
     fn inw(&mut self, operation: u64, io_bus: &Mutex<IoBus>) {
-        todo!("INW instruction is not implemented yet");
+        let port_index_reg = ((operation & 0xFFFF0000) >> 16) as u16;
+        let dest_reg = ((operation & 0xFFFF00000000) >> 32) as u16;
+        
+        let port_index = (self.get_register_value_from_code(port_index_reg) & 0xFFFF) as u16;
+        let port_value = io_bus.lock().unwrap().read_u16(port_index);
+        let dest_value = self.get_register_value_from_code(dest_reg);
+        self.set_register_value_from_code(dest_reg, dest_value & 0xFFFFFFFFFFFF0000 | port_value as u64);
     }
 
     fn ind(&mut self, operation: u64, io_bus: &Mutex<IoBus>) {
-        todo!("IND instruction is not implemented yet");
+        let port_index_reg = ((operation & 0xFFFF0000) >> 16) as u16;
+        let dest_reg = ((operation & 0xFFFF00000000) >> 32) as u16;
+        
+        let port_index = (self.get_register_value_from_code(port_index_reg) & 0xFFFF) as u16;
+        let port_value = io_bus.lock().unwrap().read_u32(port_index);
+        let dest_value = self.get_register_value_from_code(dest_reg);
+        self.set_register_value_from_code(dest_reg, dest_value & 0xFFFFFFFF00000000 | port_value as u64);
     }
 
     fn inq(&mut self, operation: u64, io_bus: &Mutex<IoBus>) {
-        todo!("INQ instruction is not implemented yet");
+        let port_index_reg = ((operation & 0xFFFF0000) >> 16) as u16;
+        let dest_reg = ((operation & 0xFFFF00000000) >> 32) as u16;
+        
+        let port_index = (self.get_register_value_from_code(port_index_reg) & 0xFFFF) as u16;
+        let port_value = io_bus.lock().unwrap().read_u64(port_index);
+
+        self.set_register_value_from_code(dest_reg, port_value);
     }
 
     fn outb(&mut self, operation: u64, io_bus: &Mutex<IoBus>) {
-        todo!("OUTB instruction is not implemented yet");
+        let port_index_reg = ((operation & 0xFFFF0000) >> 16) as u16;
+        let value_reg = ((operation & 0xFFFF00000000) >> 32) as u16;
+
+        let port_index = (self.get_register_value_from_code(port_index_reg) & 0xFFFF) as u16;
+        let input_value = (self.get_register_value_from_code(value_reg) & 0xFF) as u8;
+
+        io_bus.lock().unwrap().write_u8(port_index, input_value);
     }
 
     fn outw(&mut self, operation: u64, io_bus: &Mutex<IoBus>) {
-        todo!("OUTW instruction is not implemented yet");
+        let port_index_reg = ((operation & 0xFFFF0000) >> 16) as u16;
+        let value_reg = ((operation & 0xFFFF00000000) >> 32) as u16;
+
+        let port_index = (self.get_register_value_from_code(port_index_reg) & 0xFFFF) as u16;
+        let input_value = (self.get_register_value_from_code(value_reg) & 0xFFFF) as u16;
+
+        io_bus.lock().unwrap().write_u16(port_index, input_value);
     }
 
     fn outd(&mut self, operation: u64, io_bus: &Mutex<IoBus>) {
-        todo!("OUTD instruction is not implemented yet");
+        let port_index_reg = ((operation & 0xFFFF0000) >> 16) as u16;
+        let value_reg = ((operation & 0xFFFF00000000) >> 32) as u16;
+
+        let port_index = (self.get_register_value_from_code(port_index_reg) & 0xFFFF) as u16;
+        let input_value = (self.get_register_value_from_code(value_reg) & 0xFFFFFFFF) as u32;
+
+        io_bus.lock().unwrap().write_u32(port_index, input_value);
     }
 
     fn outq(&mut self, operation: u64, io_bus: &Mutex<IoBus>) {
-        todo!("OUTQ instruction is not implemented yet");
+        let port_index_reg = ((operation & 0xFFFF0000) >> 16) as u16;
+        let value_reg = ((operation & 0xFFFF00000000) >> 32) as u16;
+
+        let port_index = (self.get_register_value_from_code(port_index_reg) & 0xFFFF) as u16;
+        let input_value = self.get_register_value_from_code(value_reg);
+
+        io_bus.lock().unwrap().write_u64(port_index, input_value);
     }
 
     fn cpuid(&mut self, operation: u64) {
